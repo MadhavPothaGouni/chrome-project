@@ -1,0 +1,58 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 1rem;
+  text-align: center;
+  background: #fff;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.chrome-logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #202124;
+  margin-bottom: 1rem;
+}
+
+.hero-subtext {
+  font-size: 1.25rem;
+  color: #5f6368;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-primary {
+  background: #1a73e8;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #1558b0;
+}
+
+.hero-note {
+  font-size: 0.9rem;
+  color: #5f6368;
+}

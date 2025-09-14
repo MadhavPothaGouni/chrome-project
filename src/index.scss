@@ -1,5 +1,7 @@
-@import './styles/global';
-@import './styles/Navbar';
-@import './styles/HeroSection';
-@import './styles/Features';
-@import './styles/Footer';
+@use './styles/global' as *;
+@use './styles/Navbar' as *;
+@use './styles/Hero' as *;
+@use './styles/Features' as *;
+@use './styles/Footer' as *;
+
+

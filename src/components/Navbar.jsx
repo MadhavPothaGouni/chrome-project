@@ -1,49 +1,26 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import React from "react";
 import "../styles/Navbar.scss";
 
-const Navbar = () => {
-  const navbarRef = useRef(null);
-  const linksRef = useRef([]);
 
-  useEffect(() => {
-    // Animate navbar slide-down
-    gsap.from(navbarRef.current, {
-      y: -80,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out"
-    });
-
-    // Animate links staggered
-    gsap.from(linksRef.current, {
-      y: -20,
-      opacity: 0,
-      duration: 0.8,
-      delay: 0.5,
-      stagger: 0.15,
-      ease: "power2.out"
-    });
-  }, []);
-
+function Navbar() {
   return (
-    <nav className="navbar" ref={navbarRef}>
-      <div className="navbar__logo">
-        <img src="/logo.png" alt="Logo" />
-        <span>Chrome UI</span>
+    <header className="navbar">
+      <div className="navbar-container">
+        {/* Left side: Brand */}
+        <div className="navbar-brand">
+          <span className="google">Google</span>
+          <span className="chrome">Chrome</span>
+        </div>
+
+        {/* Right side: Nav Links */}
+        <nav className="navbar-links">
+          <a href="#">Features</a>
+          <a href="#">Support</a>
+          <a href="#">Download</a>
+        </nav>
       </div>
-      <ul className="navbar__links">
-        {["Home", "Features", "Download", "Support"].map((item, i) => (
-          <li
-            key={i}
-            ref={(el) => (linksRef.current[i] = el)}
-          >
-            <a href={`#${item.toLowerCase()}`}>{item}</a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    </header>
   );
-};
+}
 
 export default Navbar;

@@ -1,0 +1,23 @@
+.footer {
+  background: #202124;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-links {
+    a {
+      color: #e3f2fd;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #90caf9;
+      }
+    }
+  }
+}

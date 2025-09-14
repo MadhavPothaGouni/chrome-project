@@ -1,0 +1,58 @@
+.mockup-section {
+  position: relative;
+  height: 400vh; // enough scroll space
+  background: #f8f9fa;
+}
+
+.mockup-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup-frame {
+  position: relative;
+  width: 60%;
+  max-width: 900px;
+  height: 70vh;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: opacity 0.5s;
+  padding: 2rem;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #202124;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #5f6368;
+    max-width: 600px;
+  }
+}

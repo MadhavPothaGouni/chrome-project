@@ -1,6 +1,8 @@
-@import './variables';
-@import './mixins';
+// src/styles/global.scss
+@forward './variables';
+@forward './mixins';
 
+// You can also add some global resets
 * {
   margin: 0;
   padding: 0;
@@ -8,25 +10,7 @@
 }
 
 body {
-  font-family: $font-family-base;
-  background-color: $light-color;
-  color: $dark-color;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #212529;
 }
