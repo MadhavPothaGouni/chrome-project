@@ -1,30 +1,25 @@
-// src/components/Hero.jsx
 import React from "react";
-import chromeLogo from "../assets/chrome-logo.svg"; // make sure you have a Chrome logo SVG in assets
+import "./Hero.scss";
+import chromeLogo from "../assets/chrome-logo.svg";
 
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero-content">
-        {/* Chrome Logo */}
-        <img src={chromeLogo} alt="Chrome Logo" className="chrome-logo" />
-
-        {/* Headline */}
-        <h1 className="hero-title">The browser built to be yours</h1>
-
-        {/* Subtext */}
-        <p className="hero-subtext">
-          Chrome brings you the best of Google with powerful features and security.
-        </p>
-
-        {/* Buttons */}
-        <div className="hero-buttons">
-          <a href="#" className="btn-primary">
-            Download Chrome
-          </a>
-          <p className="hero-note">For Windows 11/10 64-bit</p>
-        </div>
-      </div>
+      <img src={chromeLogo} alt="Chrome logo" className="hero-logo" />
+      <h1>The browser built to be yours</h1>
+      <a href="#" className="btn-primary">
+        ⬇ Download Chrome
+      </a>
+      <a href="#" className="link-secondary">I want to update Chrome</a>
+      <p className="system-info">For Windows 11/10 64-bit</p>
+      <p className="small-text">
+        Help make Google Chrome better by automatically sending usage statistics
+        and crash reports to Google. <a href="#">Learn more</a>
+      </p>
+      <p className="small-text">
+        By downloading Chrome, you agree to the <a href="#">Google Terms of Service</a> and
+        <a href="#"> Chrome and ChromeOS Additional Terms of Service</a>
+      </p>
     </section>
   );
 };

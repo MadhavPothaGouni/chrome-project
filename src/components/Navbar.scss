@@ -1,48 +1,44 @@
 .navbar {
-  position: sticky;
-  top: 0;
-  width: 100%;
   background: #fff;
   border-bottom: 1px solid #e0e0e0;
-  z-index: 1000;
+  font-family: 'Roboto', sans-serif;
 
-  .navbar-container {
+  .navbar-inner {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 16px 24px;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .navbar-brand {
-    font-size: 1.2rem;
-    font-weight: 600;
+  .brand {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 0.4rem;
 
-    .google {
-      color: #5f6368;
-      font-weight: 500;
+    .brand-logo {
+      width: 24px;
+      height: 24px;
     }
 
-    .chrome {
+    .brand-text {
+      font-size: 1.2rem;
+      font-weight: 500;
       color: #202124;
-      font-weight: 600;
     }
   }
 
-  .navbar-links {
+  .nav-links {
     display: flex;
-    gap: 24px;
+    gap: 2rem;
 
     a {
+      font-size: 1rem;
+      font-weight: 400;
       color: #5f6368;
-      font-size: 0.95rem;
       text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s ease;
+      transition: color 0.2s;
 
       &:hover {
         color: #1a73e8;

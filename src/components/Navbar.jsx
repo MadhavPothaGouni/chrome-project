@@ -1,26 +1,23 @@
 import React from "react";
-import "../styles/Navbar.scss";
+import "./Navbar.scss";
+import chromeLogo from "../assets/chrome-logo.svg"; // add Chrome SVG
 
-
-function Navbar() {
+const Navbar = () => {
   return (
     <header className="navbar">
-      <div className="navbar-container">
-        {/* Left side: Brand */}
-        <div className="navbar-brand">
-          <span className="google">Google</span>
-          <span className="chrome">Chrome</span>
+      <div className="navbar-inner">
+        <div className="brand">
+          <img src={chromeLogo} alt="Chrome" className="brand-logo" />
+          <span className="brand-text">chrome</span>
         </div>
-
-        {/* Right side: Nav Links */}
-        <nav className="navbar-links">
-          <a href="#">Features</a>
-          <a href="#">Support</a>
-          <a href="#">Download</a>
+        <nav className="nav-links">
+          <a href="#">Safety</a>
+          <a href="#">By Google</a>
+          <a href="#">Extensions ↗</a>
         </nav>
       </div>
     </header>
   );
-}
+};
 
 export default Navbar;
